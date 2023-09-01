@@ -4,10 +4,15 @@ const tables = document.querySelector('#table');
 const error = document.querySelector('#error');
 
 
-function table() {
+function table(e) {
+    e.preventDefault();
 
     if (num.value > 0) {
-        for (let i = 0; i <= 10; i++) {
+        tables.innerHTML = '';
+        let start = +prompt("From which no you want to strt a table?")
+        let end = +prompt("At what no you want to end a table?")
+
+        for (let i = start; i <= end; i++) {
             tables.innerHTML += (`${num.value} x ${i} = ${num.value * i} <br />`);
         }
     }
@@ -17,6 +22,15 @@ function table() {
         error.innerHTML += ("Inavlid No");
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
