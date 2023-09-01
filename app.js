@@ -25,6 +25,16 @@ function table(e) {
 
 
 
+// let start = +prompt('Enter Starting Table');
+// let end = +prompt('Enter Ending Table');
+
+// for (let i = start; i <= end; i++) {
+//     table.innerHTML += (`<br />`);
+
+//     for (let j = 1; j <= 10; j++) {
+//         table.innerHTML += (`${i} * ${j} = ${i * j} <br />`);
+//     }
+// }
 
 
 
